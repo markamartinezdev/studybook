@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+
+.mainContainer {
+  display: flex;
+  justify-content: space-between; }
+
+.container {
+  width: 100%;
+  height: 100%; }
+  .container.MainUserContainer {
+    max-width: 200px;
+    background: linear-gradient(73deg, #0FB8B0 50%, #2cb5e8 91%);
+    box-shadow: 0px 0px 34px 0px rgba(0, 0, 0, 0.27);
+    z-index: 9; }
+    .container.MainUserContainer .userNav {
+      background: none;
+      display: flex; }
+    .container.MainUserContainer .friend {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .container.MainUserContainer .friend .userImage {
+        max-width: 60px;
+        border-radius: 100%; }
+        .container.MainUserContainer .friend .userImage:hover {
+          animation: bounce 1s infinite; }
+      .container.MainUserContainer .friends {
+        margin-top: 30px;
+        height: 100%; }
+        .container.MainUserContainer .friends::-webkit-scrollbar {
+          width: .5em;
+          display: none; }
+        .container.MainUserContainer .friendsHeader {
+          box-shadow: 0 -13px 31px -13px rgba(37, 36, 36, 0.62); }
+    .container.MainUserContainer .userContent {
+      margin: 21px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .container.MainUserContainer .userContent .newPostButton {
+        background: #10e453;
+        border: none;
+        padding: .5em;
+        color: #fff;
+        font-weight: 900;
+        border-radius: 8px; }
+        .container.MainUserContainer .userContent .newPostButton:focus, .container.MainUserContainer .userContent .newPostButtonactive {
+          border: none;
+          outline: none; }
+  .container.postsContainer {
+    background: #efefef;
+    display: flex;
+    flex-direction: column; }
+    .container.postsContainer .PostNav {
+      background: #263322; }
+      .container.postsContainer .PostNav select.classSelect {
+        width: 80%;
+        padding: .5em;
+        border: none;
+        border-radius: 10px; }
+    .container.postsContainer .posts {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 1em;
+      height: 100%;
+      overflow-y: auto;
+      padding-bottom: 5em; }
+      .container.postsContainer .posts::-webkit-scrollbar {
+        width: .5em; }
+      .container.postsContainer .posts::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+      .container.postsContainer .posts::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+        border-radius: 100px; }
+      .container.postsContainer .posts .post {
+        background: #70ffca;
+        width: 100%;
+        max-width: 700px;
+        padding: .5em;
+        border-radius: 10px;
+        margin: 10px 0; }
+        .container.postsContainer .posts .post .postContent {
+          display: flex;
+          align-items: baseline; }
+          .container.postsContainer .posts .post .postContent p.postText {
+            margin-left: 22px; }
+        .container.postsContainer .posts .post .chatContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%; }
+          .container.postsContainer .posts .post .chatContainer .chatMessages {
+            width: 100%;
+            background: #fff;
+            padding: 0 2em;
+            border-radius: 10px 10px 0 0;
+            max-height: 100px;
+            overflow-y: auto; }
+            .container.postsContainer .posts .post .chatContainer .chatMessages::-webkit-scrollbar {
+              width: .5em; }
+            .container.postsContainer .posts .post .chatContainer .chatMessages::-webkit-scrollbar-track {
+              -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+            .container.postsContainer .posts .post .chatContainer .chatMessages::-webkit-scrollbar-thumb {
+              background-color: darkgrey;
+              outline: 1px solid slategrey;
+              border-radius: 100px; }
+            .container.postsContainer .posts .post .chatContainer .chatMessages .chatUser {
+              color: #2bb5e7; }
+          .container.postsContainer .posts .post .chatContainer .message {
+            display: flex;
+            width: 100%; }
+            .container.postsContainer .posts .post .chatContainer .message .text {
+              width: 100%;
+              padding: 1em;
+              border: none;
+              background: #faf8f7;
+              border-radius: 0 0 0 10px; }
+              .container.postsContainer .posts .post .chatContainer .message .text:focus {
+                border: none;
+                outline: none; }
+          .container.postsContainer .posts .post .chatContainer button.send {
+            padding: .5em;
+            width: 100px;
+            background: #00BCD4;
+            box-shadow: none;
+            border: none;
+            border-radius: 0 0 7px 0; }
+
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.dialogContainer {
+  position: absolute;
+  height: 100%;
+  Width: 100%;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  background: rgba(51, 50, 50, 0.84);
+  z-index: 9999; }
+  .dialogContainer.hide {
+    display: none; }
+  .dialogContainer.show {
+    display: flex; }
+  .dialogContainer .dialog {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    width: 80%; }
+    .dialogContainer .dialog .newPostMessage {
+      width: 100%;
+      height: 200px; }
+    .dialogContainer .dialog .newPostSubmit {
+      background: #26e35a;
+      border: none;
+      padding: .5em;
+      color: #fff; }
+    .dialogContainer .dialog .newPostCancel {
+      background: #ff3d2e;
+      border: none;
+      padding: .5em;
+      color: #fff; }
+    .dialogContainer .dialog #classSelect {
+      padding: .4em; }
+
+.errorToolTip:after {
+  content: 'You must enter test!'; }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(50%); }
+  100% {
+    transform: translateY(0); } }
+
+/*# sourceMappingURL=app.css.map */

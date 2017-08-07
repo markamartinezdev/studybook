@@ -1,0 +1,105 @@
+{
+  "posts": [
+    {
+      "postId": "-KquCyahspWtftje5Ve1",
+      "poster": "Chase",
+      "post": "Need help with a problem.",
+      "class": "math",
+      "Chat": [
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "euid"
+        },
+        {
+          "poster": "mark",
+          "text": "fyfyf"
+        }
+      ]
+    },    {
+      "postId": "2",
+      "poster": "dan",
+      "post": "Need help with a problem.",
+      "class": "math",
+      "Chat": [
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        }
+      ]
+    },    {
+      "postId": "3",
+      "poster": "gregg",
+      "post": "Need help with a problem.",
+      "class": "math",
+      "Chat": [
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        }
+      ]
+    },    {
+      "postId": "4",
+      "poster": "Chase",
+      "post": "Need help with a problem.",
+      "class": "math",
+      "Chat": [
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        }
+      ]
+    },    {
+      "postId": "5",
+      "poster": "Chase",
+      "post": "Need help with a problem.",
+      "class": "math",
+      "Chat": [
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        },
+        {
+          "poster": "mark",
+          "text": "ill lend a hand"
+        }
+      ]
+    }
+  ],
+  "friends":[{"userName":"mark","image":"image.png"},
+    {"userName":"gregg","image":"image2.png"},
+    {"userName":"dan","image":"image2.png"},
+    {"userName":"alex","image":"image2.png"},
+    {"userName":"chase","image":"image.3png"}]
+}
